@@ -1,10 +1,13 @@
 allowCompoundWords: true
 dictionaries:
+  - cpp
   - en_US
   - en-gb
+  - fullstack
   - git
   - markdown
   - misc
+  - shellscript
   - softwareTerms
 enableGlobDot: true
 features:
@@ -15,12 +18,10 @@ ignorePaths:
   - .git
   - .github/CODE_OF_CONDUCT.*
   - .vscode/extensions.json
-  - cspell.config.yml
 language: en,ja
 useGitignore: true
 version: '0.2'
 words:
-  - imgbotconfig
   - kito
   - kuron
   - kuroné

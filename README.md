@@ -26,8 +26,9 @@
    - `.editorconfig` sets editor rules.
    - `.gitattributes` manages export rules.
    - `.imgbotconfig` controls image optimization.
-   - `.markdownlint.yml` and `.markdownlint-cli2.yaml` define Markdown lint rules.
-   - `cspell.config.yml` configures spell checking.
+   - `.markdownlint.yml` and `.markdownlint-cli2.yaml` define Markdown
+     lint rules.
+   - `.cspell.config.yml` configures spell checking.
    - `.coderabbit.yaml` contains CodeRabbit settings.
    - `.vscode/` provides recommended settings for VS Code.
 5. Update documents in `.github/` such as CONTRIBUTING.md to match your policies.
