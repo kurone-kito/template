@@ -4,11 +4,15 @@
 
 ## Features
 
+- AI agent guidelines
+  ([GitHub Copilot](.github/copilot-instructions.md),
+  [OpenAI Codex](AGENTS.md), [Claude Code](CLAUDE.md))
 - CI/CD
   - [CodeRabbit](https://www.coderabbit.ai/)
   - [ImgBot](https://imgbot.net/)
   - Linting on GitHub Actions
   - Stale issues and pull requests management on GitHub Actions
+- [Conventional Commits](https://www.conventionalcommits.org/)
 - Documents for GitHub
 - Git attributes
 - Linters
@@ -31,7 +35,10 @@
    - `.cspell.config.yml` configures spell checking.
    - `.coderabbit.yaml` contains CodeRabbit settings.
    - `.vscode/` provides recommended settings for VS Code.
-5. Update documents in `.github/` such as CONTRIBUTING.md to match your policies.
+5. Update documents in `.github/` such as CONTRIBUTING.md to match your
+   policies.
+6. Update AI agent guidelines in `AGENTS.md`, `CLAUDE.md`, and
+   `.github/copilot-instructions.md` to reflect your project specifics.
 
 ## License
 
