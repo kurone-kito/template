@@ -1,6 +1,11 @@
 # 📄 Generic repository template
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![Linting](https://github.com/kurone-kito/template/actions/workflows/lint.yml/badge.svg)](https://github.com/kurone-kito/template/actions/workflows/lint.yml)
+[![CodeRabbit](https://img.shields.io/badge/review-CodeRabbit-green?logo=coderabbit)](https://www.coderabbit.ai/)
+
+A language-agnostic project template designed as the root of a hierarchy
+of derived templates.
 
 ## Features
 
@@ -19,7 +24,13 @@
   - [CSpell](https://cspell.org/)
   - [EditorConfig](https://editorconfig.org/)
   - [MarkdownLint](https://github.com/DavidAnson/markdownlint)
-- Visual Studio Code integration
+
+### Recommended NeoVim / Vim plugins
+
+- [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim) —
+  EditorConfig support
+- [cspell.nvim](https://github.com/davidmh/cspell.nvim) — CSpell
+  integration for NeoVim (via null-ls / none-ls)
 
 ## Using this template
 
@@ -28,7 +39,7 @@
 3. Review workflows under `.github/workflows` and adjust them to your needs.
 4. Customize the configuration files:
    - `.editorconfig` sets editor rules.
-   - `.gitattributes` manages export rules.
+   - `.gitattributes` manages line ending normalization and export rules.
    - `.imgbotconfig` controls image optimization.
    - `.markdownlint.yml` and `.markdownlint-cli2.yaml` define Markdown
      lint rules.
