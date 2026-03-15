@@ -115,3 +115,16 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/linux,macos,vim,visualstudiocode,windows
+
+### THE PROJECT SPECIFIES #################################################
+
+### AI Agents ###
+# Claude Code local config
+.claude/
+
+# OpenAI Codex sandbox
+.codex/
+
+### NeoVim ###
+# Project-local NeoVim config
+.nvim.lua
