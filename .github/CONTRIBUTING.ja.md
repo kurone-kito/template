@@ -15,3 +15,10 @@ Language: [🇬🇧](./CONTRIBUTING.md) | **🇯🇵** | [🇨🇳](./CONTRIBUTI
 4. このリポジトリでは、できる限り
    **[英語、または日本語](https://translate.google.com/)
    での議論**を推奨しています。
+5. このプロジェクトは
+   [Conventional Commits](https://www.conventionalcommits.org/)
+   に準拠しています。表題はユーザー目線で記述し、本文は
+   **Why / Context / Change** 構文に従ってください。リポジトリルートに
+   `.gitmessage` テンプレートがあります。詳細は
+   [copilot-instructions.md](./copilot-instructions.md#commit-rules)
+   を参照してください。

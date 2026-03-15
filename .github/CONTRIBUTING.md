@@ -14,3 +14,10 @@ Language: **🇬🇧** | [🇯🇵](./CONTRIBUTING.ja.md) | [🇨🇳](./CONTRIB
    [pull request](https://github.com/kurone-kito/template/pulls)**.
 4. In this repository, discussion
    **[in English or Japanese](https://translate.google.com/) is recommended**.
+5. This project follows
+   [Conventional Commits](https://www.conventionalcommits.org/).
+   Please write a user-facing subject line and structure the body using
+   the **Why / Context / Change** format. A `.gitmessage` template is
+   available at the repository root. See
+   [copilot-instructions.md](./copilot-instructions.md#commit-rules) for
+   full details.
