@@ -44,9 +44,9 @@ guidance when writing commit messages.
 
 ```txt
 <type>[optional scope]: <user-facing description>
-                                          ← blank line
+
 <body: address purpose, context, and what changed>
-                                          ← blank line
+
 [optional footer(s)]
 ```
 
