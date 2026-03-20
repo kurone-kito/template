@@ -3,6 +3,8 @@ updates:
   - directory: /
     groups:
       actions-minor:
+        patterns:
+          - "*"
         update-types:
           - minor
           - patch

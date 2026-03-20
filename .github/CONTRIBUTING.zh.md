@@ -10,6 +10,7 @@ Language: [🇬🇧](./CONTRIBUTING.md) | [🇯🇵](./CONTRIBUTING.ja.md) | **�
 4. 在此存储库中，建议**使用[英语或日语](https://translate.google.com/)进行**讨论。
 5. 本项目遵循
    [Conventional Commits](https://www.conventionalcommits.org/)。
-   请从用户角度撰写标题行，正文请使用 **Why / Context / Change**
-   格式。仓库根目录提供了 `.gitmessage` 模板。详情请参阅
+   请从用户角度撰写标题行，正文应说明变更的原因（Why）、相关背景（Context）
+   以及具体更改内容（Change），可以使用自然段落或适当的小标题来组织内容。仓库根目录提供了
+   `.gitmessage` 模板。详情请参阅
    [copilot-instructions.md](./copilot-instructions.md#commit-rules)。
