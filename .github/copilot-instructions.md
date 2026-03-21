@@ -6,6 +6,17 @@ When contributing to this repository using AI agents, adhere to the
 following guidelines to ensure high-quality contributions that align with
 the project's standards and practices:
 
+## Tooling priority and compatibility
+
+This repository is intentionally optimized for GitHub Copilot CLI and
+VS Code Copilot Chat because they are the primary tools used for
+day-to-day work and benchmarking.
+
+`AGENTS.md` and `CLAUDE.md` exist as lightweight compatibility entry
+points for Codex and Claude Code. Keep this file as the canonical,
+fully detailed guide unless benchmark results justify a more neutral
+layout.
+
 ## Conversation
 
 - The conversational language should match the user's language.
@@ -16,6 +27,11 @@ the project's standards and practices:
   running in Agent mode, promptly switch to Plan mode and ask the user
   questions. In such cases, provide one or more recommended response
   options.
+- Outside GitHub Copilot, interpret the `Agent mode` and `Plan mode`
+  wording by intent: continue autonomously for low-risk work, but pause
+  and ask a concise question when uncertainty or hidden risk makes the
+  next step unsafe. When that pause is needed, provide one or more
+  recommended response options.
 
 ## Commit rules
 
