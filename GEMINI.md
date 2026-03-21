@@ -34,6 +34,14 @@ A `.gitmessage` template is available at the repository root.
 Write user-facing, lowercase subjects, keep them under 72 characters,
 and split unrelated changes into separate atomic commits.
 
+## Branch strategy
+
+This project follows GitHub Flow. All changes reach `main` through
+pull requests (merge commits only — squash and rebase merge are
+disabled). Feature branches are always rebased onto `main`, never
+merged. See the full rules in
+[.github/copilot-instructions.md](.github/copilot-instructions.md#branch-strategy).
+
 ## Onboarding detection
 
 When starting a session, check whether this repository is the base

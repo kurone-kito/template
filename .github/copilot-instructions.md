@@ -33,6 +33,34 @@ layout.
   next step unsafe. When that pause is needed, provide one or more
   recommended response options.
 
+## Branch strategy
+
+This project follows
+[GitHub Flow](https://docs.github.com/en/get-started/using-git/github-flow):
+`main` is the only long-lived branch and every change reaches `main`
+through a pull request.
+
+### Rules
+
+- **Never push directly to `main`** — all changes must go through a
+  pull request. Branch protection is enforced on GitHub.
+- **Rebase onto `main`** — when a feature branch needs the latest
+  `main`, always rebase (`git pull --rebase` or
+  `git rebase main`). Do not create merge commits inside feature
+  branches.
+- **Rebase between feature branches** — if one feature branch needs
+  changes from another, use rebase, not merge.
+- **Merge commits at PR boundary** — pull requests into `main` are
+  merged with a merge commit (squash-merge and rebase-merge are
+  disabled in the repository settings).
+- **fixup + autosquash for in-branch fixes** — when a later commit in
+  a feature branch fixes an earlier one, prefer
+  `git commit --fixup=<sha>` followed by
+  `git rebase -i --autosquash` to fold the fix into its target.
+- **Avoid giant commits** — if squashing would produce an
+  unreasonably large commit, keep the fix commit separate or
+  re-split the history so each commit remains reviewable.
+
 ## Commit rules
 
 This project follows
