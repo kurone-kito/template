@@ -5,7 +5,7 @@
     "*.md": "${capture}.*.md",
     ".gitattributes": ".gitignore, .gitmessage",
     ".markdownlint.*": ".markdownlint-cli2.*",
-    "AGENTS.md": "CLAUDE.md"
+    "AGENTS.md": "CLAUDE.md, GEMINI.md"
   },
   "files.associations": {
     ".gitmessage": "git-commit",

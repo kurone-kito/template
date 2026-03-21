@@ -34,6 +34,22 @@ A `.gitmessage` template is available at the repository root.
 Write user-facing, lowercase subjects, keep them under 72 characters,
 and split unrelated changes into separate atomic commits.
 
+## Onboarding detection
+
+When starting a session, check whether this repository is the base
+template or a derived project:
+
+- If the repository name is exactly `template`, it is the base
+  template — no action needed.
+- If the name differs **and** this file still contains the phrase
+  `language-independent generic project template`, the guidelines
+  have not been customized yet.
+
+In that case, **proactively propose an onboarding workflow** to
+customize the project's documentation, tooling, and AI guidelines.
+See the full onboarding checklist in
+[.github/copilot-instructions.md](.github/copilot-instructions.md).
+
 ## Canonical reference
 
 The full, Copilot-first project guidance lives in
