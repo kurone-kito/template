@@ -13,6 +13,7 @@ of derived templates.
   ([GitHub Copilot canonical guide](.github/copilot-instructions.md),
   [OpenAI Codex adapter](AGENTS.md),
   [Claude Code adapter](CLAUDE.md),
+  [Gemini CLI adapter](GEMINI.md),
   [strategy notes](docs/ai-strategy.md))
 - CI/CD
   - [CodeRabbit](https://www.coderabbit.ai/)
@@ -51,8 +52,8 @@ of derived templates.
 5. Update documents in `.github/` such as CONTRIBUTING.md to match your
    policies.
 6. Review `docs/ai-strategy.md`, then update `AGENTS.md`,
-   `CLAUDE.md`, and `.github/copilot-instructions.md` to reflect your
-   project specifics and preferred tooling order.
+   `CLAUDE.md`, `GEMINI.md`, and `.github/copilot-instructions.md` to
+   reflect your project specifics and preferred tooling order.
 
 ## License
 

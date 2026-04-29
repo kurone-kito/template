@@ -12,10 +12,10 @@ This repository is intentionally optimized for GitHub Copilot CLI and
 VS Code Copilot Chat because they are the primary tools used for
 day-to-day work and benchmarking.
 
-`AGENTS.md` and `CLAUDE.md` exist as lightweight compatibility entry
-points for Codex and Claude Code. Keep this file as the canonical,
-fully detailed guide unless benchmark results justify a more neutral
-layout.
+`AGENTS.md`, `CLAUDE.md`, and `GEMINI.md` exist as lightweight
+compatibility entry points for Codex, Claude Code, and Gemini CLI
+respectively. Keep this file as the canonical, fully detailed guide
+unless benchmark results justify a more neutral layout.
 
 ## Conversation
 
