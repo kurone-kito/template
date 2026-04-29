@@ -19,7 +19,8 @@ ignorePaths:
   - .github/CODE_OF_CONDUCT.*
   - .vscode/extensions.json
 ignoreRegExpList:
-  - kuroné?
+  # cspell:disable-next-line
+  - '\bkuron[eé]?\b'
 language: en,ja
 useGitignore: true
 version: '0.2'
