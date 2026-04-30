@@ -66,7 +66,13 @@ through a pull request.
 This project follows
 [Conventional Commits](https://www.conventionalcommits.org/).
 A `.gitmessage` template is available at the repository root for
-guidance when writing commit messages.
+guidance when writing commit messages. Git does not use it
+automatically, so contributors who want the template prefilled in
+their editor should opt in once per clone:
+
+```sh
+git config commit.template .gitmessage
+```
 
 ### Format
 
