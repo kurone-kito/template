@@ -11,5 +11,6 @@
 
 # Exclude from distribution archives
 .coderabbit.yaml export-ignore
-.git* export-ignore
+.gitattributes export-ignore
+.gitignore export-ignore
 .imgbotconfig export-ignore
