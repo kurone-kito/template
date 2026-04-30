@@ -45,9 +45,10 @@ through a pull request.
 - **Never push directly to `main`** — all changes must go through a
   pull request. Branch protection is enforced on GitHub.
 - **Rebase onto `main`** — when a feature branch needs the latest
-  `main`, always rebase (`git pull --rebase` or
-  `git rebase main`). Do not create merge commits inside feature
-  branches.
+  `main`, always rebase. Fetch first so the local `main` is not
+  stale, e.g. `git fetch origin && git rebase origin/main`
+  (or `git pull --rebase origin main`). Do not create merge commits
+  inside feature branches.
 - **Rebase between feature branches** — if one feature branch needs
   changes from another, use rebase, not merge.
 - **Merge commits at PR boundary** — pull requests into `main` are
