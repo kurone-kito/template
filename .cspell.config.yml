@@ -18,11 +18,11 @@ ignorePaths:
   - .git
   - .github/CODE_OF_CONDUCT.*
   - .vscode/extensions.json
-ignoreRegExpList:
-  # cspell:disable-next-line
-  - '\bkuron[eé]?\b'
 language: en,ja
 useGitignore: true
 version: '0.2'
 words:
   - kito
+  - kuron
+  - kurone
+  - kuroné
