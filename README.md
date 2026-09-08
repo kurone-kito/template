@@ -9,11 +9,12 @@ of derived templates.
 
 ## Features
 
-- AI agent guidance with a Copilot-first compatibility layout
-  ([GitHub Copilot canonical guide](.github/copilot-instructions.md),
-  [OpenAI Codex adapter](AGENTS.md),
+- AI agent guidance with a single canonical guide and thin
+  per-harness adapters
+  ([canonical guide](AGENTS.md),
   [Claude Code adapter](CLAUDE.md),
   [Gemini CLI adapter](GEMINI.md),
+  [GitHub Copilot adapter](.github/copilot-instructions.md),
   [strategy notes](docs/ai-strategy.md))
 - CI/CD
   - [CodeRabbit](https://www.coderabbit.ai/)
@@ -51,9 +52,10 @@ of derived templates.
    - `.vscode/` provides recommended settings for VS Code.
 5. Update documents in `.github/` such as CONTRIBUTING.md to match your
    policies.
-6. Review `docs/ai-strategy.md`, then update `AGENTS.md`,
-   `CLAUDE.md`, `GEMINI.md`, and `.github/copilot-instructions.md` to
-   reflect your project specifics and preferred tooling order.
+6. Review `docs/ai-strategy.md`, then update `AGENTS.md` to reflect
+   your project specifics. `CLAUDE.md`, `GEMINI.md`, and
+   `.github/copilot-instructions.md` rarely need changes, since they
+   import or reference `AGENTS.md` instead of duplicating it.
 
 ## License
 
