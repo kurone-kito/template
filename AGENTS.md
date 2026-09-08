@@ -3,31 +3,28 @@
 This project is a language-independent generic project template.
 
 When contributing to this repository using AI agents, adhere to the
-following guidelines to ensure high-quality contributions that align
-with the project's standards and practices.
+following guidelines to ensure high-quality contributions that align with
+the project's standards and practices.
 
-This file is the canonical, tool-neutral instruction source for AI
-coding agents in this repository, following the
-[AGENTS.md](https://agents.md) convention that most agent tools
-discover automatically at the repository root. `CLAUDE.md` and
-`GEMINI.md` are thin adapters that import this file for the tools
-that do not read it by default, and
+This file is the canonical, tool-neutral instruction source for AI coding
+agents in this repository, following the [AGENTS.md](https://agents.md)
+convention that most agent tools discover automatically at the repository
+root. `CLAUDE.md` and `GEMINI.md` are thin adapters that import this file
+for the tools that do not read it by default, and
 [.github/copilot-instructions.md](.github/copilot-instructions.md)
-carries only the small amount of guidance specific to GitHub
-Copilot's own UI. See
-[docs/ai-strategy.md](docs/ai-strategy.md) for the reasoning behind
+carries only the small amount of guidance specific to GitHub Copilot's own
+UI. See [docs/ai-strategy.md](docs/ai-strategy.md) for the reasoning behind
 this layout.
 
 ## Conversation
 
 - The conversational language should match the user's language.
   For example, if the user speaks in Japanese, respond in Japanese.
-- However, comments and documentation should be written in English
-  unless there is a clear context otherwise.
-- Continue autonomously for low-risk work, but pause and ask a
-  concise question when uncertainty or hidden risk makes the next
-  step unsafe. When that pause is needed, provide one or more
-  recommended response options.
+- However, comments and documentation should be written in English unless
+  there is a clear context otherwise.
+- Continue autonomously for low-risk work, but pause and ask a concise
+  question when uncertainty or hidden risk makes the next step unsafe. When
+  that pause is needed, provide one or more recommended response options.
 
 ## Branch strategy
 
@@ -38,34 +35,33 @@ through a pull request.
 
 ### Rules
 
-- **Never push directly to `main`** — all changes must go through a
-  pull request. Branch protection is enforced on GitHub.
-- **Rebase onto `main`** — when a feature branch needs the latest
-  `main`, always rebase. Fetch first so the local `main` is not
-  stale, e.g. `git fetch origin && git rebase origin/main`
-  (or `git pull --rebase origin main`). Do not create merge commits
-  inside feature branches.
+- **Never push directly to `main`** — all changes must go through a pull
+  request. Branch protection is enforced on GitHub.
+- **Rebase onto `main`** — when a feature branch needs the latest `main`,
+  always rebase. Fetch first so the local `main` is not stale,
+  e.g. `git fetch origin && git rebase origin/main`
+  (or `git pull --rebase origin main`). Do not create merge commits inside
+  feature branches.
 - **Rebase between feature branches** — if one feature branch needs
   changes from another, use rebase, not merge.
-- **Merge commits at PR boundary** — pull requests into `main` are
-  merged with a merge commit (squash-merge and rebase-merge are
-  disabled in the repository settings).
-- **fixup + autosquash for in-branch fixes** — when a later commit in
-  a feature branch fixes an earlier one, prefer
-  `git commit --fixup=<sha>` followed by
-  `git rebase -i --autosquash` to fold the fix into its target.
-- **Avoid giant commits** — if squashing would produce an
-  unreasonably large commit, keep the fix commit separate or
-  re-split the history so each commit remains reviewable.
+- **Merge commits at PR boundary** — pull requests into `main` are merged
+  with a merge commit (squash-merge and rebase-merge are disabled in the
+  repository settings).
+- **fixup + autosquash for in-branch fixes** — when a later commit in a
+  feature branch fixes an earlier one, prefer `git commit --fixup=<sha>`
+  followed by `git rebase -i --autosquash` to fold the fix into its target.
+- **Avoid giant commits** — if squashing would produce an unreasonably
+  large commit, keep the fix commit separate or re-split the history so
+  each commit remains reviewable.
 
 ## Commit rules
 
 This project follows
 [Conventional Commits](https://www.conventionalcommits.org/).
-A `.gitmessage` template is available at the repository root for
-guidance when writing commit messages. Git does not use it
-automatically, so contributors who want the template prefilled in
-their editor should opt in once per clone:
+A `.gitmessage` template is available at the repository root for guidance
+when writing commit messages. Git does not use it automatically, so
+contributors who want the template prefilled in their editor should opt in
+once per clone:
 
 ```sh
 git config commit.template .gitmessage
@@ -84,16 +80,16 @@ git config commit.template .gitmessage
 ### Subject line
 
 - Use the format: `<type>[optional scope]: <description>`
-- Write from the **user's perspective** — briefly state what this
-  commit solves or improves for the end user or developer
+- Write from the **user's perspective** — briefly state what this commit
+  solves or improves for the end user or developer
 - Write in **lowercase**, imperative mood (e.g., "add", not "added")
 - Keep the subject line under **72 characters**
 - Do **not** end with a period
 
 ### Types
 
-Common types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`,
-`chore`, `ci`, `build`, `perf`
+Common types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`,
+`ci`, `build`, `perf`
 
 ### Scopes
 
@@ -110,14 +106,14 @@ The body should address three aspects:
 - **What changed** — the concrete action taken
 
 Prefer the **why → context → change** order when practical.
-Write these as **natural prose** — weave the aspects into
-coherent sentences rather than using labeled sections. Labeled
-sections (`Why:` / `Context:` / `Change:`) are acceptable only
-when explicit paragraph separation improves clarity.
+Write these as **natural prose** — weave the aspects into coherent
+sentences rather than using labeled sections. Labeled sections
+(`Why:` / `Context:` / `Change:`) are acceptable only when explicit
+paragraph separation improves clarity.
 
 Omit any aspect whose information **cannot be reliably inferred**.
-If the subject line is self-explanatory, the body may be omitted
-entirely. **Breaking changes must always include a body.**
+If the subject line is self-explanatory, the body may be omitted entirely.
+**Breaking changes must always include a body.**
 
 Wrap body lines at **72 characters**.
 
@@ -142,8 +138,8 @@ Keep each commit as **small and focused** as possible:
 - **Separate refactoring** from behavior changes
 - **Separate formatting/style** changes from logic changes
 - **Separate dependency updates** from code changes
-- When in doubt, prefer smaller commits that are easy to review,
-  revert, and bisect
+- When in doubt, prefer smaller commits that are easy to review, revert,
+  and bisect
 
 ### Examples
 
@@ -207,9 +203,9 @@ feat: add auth system and refactor database layer and update docs
 
 ## Verification
 
-Before committing changes, run the same checks the `Linting
-workflow` CI job runs. No `package.json` is required — both tools
-run on demand via `npx`:
+Before committing changes, run the same checks the `Linting workflow` CI
+job runs. No `package.json` is required — both tools run on demand via
+`npx`:
 
 ```sh
 npx --yes cspell "**"
@@ -233,45 +229,44 @@ When an AI agent starts a session, it should determine whether this
 repository is the **base template** or a **derived project**:
 
 1. **Check the repository name** — inspect the git remote URL
-   (e.g., `git remote get-url origin`), the working-directory name,
-   or any GitHub API context available to the agent. If the
-   repository name is exactly `template`, treat it as the base
-   template. Any other name indicates a derived project.
+   (e.g., `git remote get-url origin`), the working-directory name, or any
+   GitHub API context available to the agent. If the repository name is
+   exactly `template`, treat it as the base template. Any other name
+   indicates a derived project.
 2. **Check for generic content** — look for the sentinel phrase
-   `language-independent generic project template` in this file.
-   Its presence means the guidelines have **not yet been
-   customized**.
+   `language-independent generic project template` in this file. Its
+   presence means the guidelines have **not yet been customized**.
 
 If both conditions are met — the repository is derived **and** the
-guidelines are still generic — the agent should **proactively
-propose an onboarding workflow** before proceeding with the user's
-request. The proposal should be conversational, brief, and
-non-blocking (the user may decline and continue normally).
+guidelines are still generic — the agent should **proactively propose an
+onboarding workflow** before proceeding with the user's request. The
+proposal should be conversational, brief, and non-blocking (the user may
+decline and continue normally).
 
 ### Onboarding proposal
 
-When proposing onboarding, suggest customizing the following areas
-in a single plan:
+When proposing onboarding, suggest customizing the following areas in a
+single plan:
 
-1. **Project description** — update `README.md` and the opening
-   lines of AI instruction files to reflect the project's purpose
-2. **Language / framework** — identify the primary language and
-   framework; add relevant linter, formatter, and build tooling
-3. **Dependency management** — set up the appropriate package
-   manager (npm, pip, cargo, etc.) and lock-file conventions
-4. **Testing strategy** — define the test runner, coverage targets,
-   and test-file conventions
+1. **Project description** — update `README.md` and the opening lines of
+   AI instruction files to reflect the project's purpose
+2. **Language / framework** — identify the primary language and framework;
+   add relevant linter, formatter, and build tooling
+3. **Dependency management** — set up the appropriate package manager
+   (npm, pip, cargo, etc.) and lock-file conventions
+4. **Testing strategy** — define the test runner, coverage targets, and
+   test-file conventions
 5. **CI/CD workflows** — adjust `.github/workflows/` to match the
    project's build, test, and deploy pipeline
 6. **AI guideline specialization** — rewrite this file with
-   project-specific rules, coding patterns, and architecture notes.
-   The adapters (`CLAUDE.md`, `GEMINI.md`,
-   `.github/copilot-instructions.md`) rarely need changes, since
-   they import or reference this file rather than duplicating it.
-7. **README rewrite** — replace the template README with
-   project-specific content (badges, installation, usage, etc.)
-8. **License review** — confirm or replace the MIT license if the
-   project requires a different one
+   project-specific rules, coding patterns, and architecture notes. The
+   adapters (`CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`)
+   rarely need changes, since they import or reference this file rather
+   than duplicating it.
+7. **README rewrite** — replace the template README with project-specific
+   content (badges, installation, usage, etc.)
+8. **License review** — confirm or replace the MIT license if the project
+   requires a different one
 
-Present these items as a checklist proposal and let the user select
-which items to tackle and in what order.
+Present these items as a checklist proposal and let the user select which
+items to tackle and in what order.
