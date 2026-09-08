@@ -2,8 +2,8 @@
 
 This file is the Claude Code entry point. Claude Code does not read
 `AGENTS.md` automatically, so the full guidelines defined there are
-imported below; treat the imported content as if it were written
-directly in this file.
+imported below; treat the imported content as if it were written directly
+in this file.
 
 @AGENTS.md
 
