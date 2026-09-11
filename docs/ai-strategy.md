@@ -16,7 +16,7 @@ layout follows that harness mix.
   guidance here first.
 - [CLAUDE.md](../CLAUDE.md) and [GEMINI.md](../GEMINI.md) are thin adapters
   for the two tools that do not read `AGENTS.md` by default (Claude Code,
-  and Gemini CLI unless a user has opted into `AGENTS.md` in their own
+  and Antigravity CLI unless a user has opted into `AGENTS.md` in their own
   settings). Each imports `AGENTS.md` via a standalone `@AGENTS.md`
   directive so its content loads automatically; they should stay a few
   lines and rarely need edits.
