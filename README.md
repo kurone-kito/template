@@ -13,7 +13,7 @@ of derived templates.
   per-harness adapters
   ([canonical guide](AGENTS.md),
   [Claude Code adapter](CLAUDE.md),
-  [Gemini CLI adapter](GEMINI.md),
+  [Antigravity CLI adapter](GEMINI.md),
   [GitHub Copilot adapter](.github/copilot-instructions.md),
   [strategy notes](docs/ai-strategy.md))
 - CI/CD
