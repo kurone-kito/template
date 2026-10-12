@@ -20,6 +20,8 @@ ignorePaths:
   - .vscode/extensions.json
 language: en,ja
 useGitignore: true
+useIntlWordSegmentation: true
+validateDirectives: true
 version: '0.2'
 words:
   - kito
